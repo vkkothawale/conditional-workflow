@@ -18,4 +18,4 @@ jobs:
     if: ${{ inputs.perform_deploy }}
     steps:
       - name: Deploy build to target
-        run: deploy --build ${{ inputs.build_id }} --target ${{ inputs.deploy_target }}
+        run: echo "deploy --build ${{ inputs.build_id }} --target ${{ inputs.deploy_target }}"
