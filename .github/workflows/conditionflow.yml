@@ -10,12 +10,12 @@ on:
         type: string
       perform_deploy:
         required: true
-        type: boolean
+        type: string
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: ${{ inputs.perform_deploy }}
+    if: ${{ inputs.perform_deploy == 'dev' }}
     steps:
       - name: Deploy build to target
         run: echo "deploy --build ${{ inputs.build_id }} --target ${{ inputs.deploy_target }}"
