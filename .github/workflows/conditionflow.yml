@@ -1,3 +1,4 @@
+### For helm chart deployment you can refere https://github.com/devopshint/Deploy-java-helm-chart-on-EKS-using-GitHub-Actions/blob/main/.github/workflows/main.yml
 name: Test inputs using conditions
 on:
   workflow_dispatch:
